@@ -1,0 +1,14 @@
+<mat-card *ngFor="let offer of offers" class="example-card">
+  <mat-card-title-group>
+    <mat-card-title>{{offer.title}}</mat-card-title>
+    <mat-card-subtitle>{{offer.subTitle}}</mat-card-subtitle>
+    <img
+      mat-card-sm-image
+      src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+    />
+  </mat-card-title-group>
+  <mat-card-content>
+    {{ offer.description ? offer.description : 'there is no description' }}
+  </mat-card-content>
+</mat-card>
+
