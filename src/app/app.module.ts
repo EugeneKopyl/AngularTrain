@@ -15,6 +15,7 @@ import { BodyComponent } from './components/body/body.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { OfferService } from './services/offer.service';
+import { AboutPageComponent } from './components/about-page/about-page.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { OfferService } from './services/offer.service';
     HeaderComponent,
     FooterComponent,
     BodyComponent,
+    AboutPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,7 @@ import { OfferService } from './services/offer.service';
     MatSliderModule,
     MatCardModule,
     HttpClientModule,
+    AppRoutingModule,
   ],
   providers: [OfferService],
   bootstrap: [AppComponent],

@@ -13,4 +13,7 @@ export class OfferService {
   getAllData(): Observable<any> {
     return this._http.get(`${this.getOffersUrl}`);
   }
+  getById(id: string): Observable<any> {
+    return this._http.get(`${this.getOffersUrl}/${id}`);
+  }
 }

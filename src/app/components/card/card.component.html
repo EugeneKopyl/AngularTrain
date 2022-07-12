@@ -1,4 +1,4 @@
-<mat-card *ngFor="let offer of offers" class="example-card">
+<mat-card *ngFor="let offer of offers" class="example-card" [routerLink]="['/offers', offer.id]">
   <mat-card-title-group>
     <mat-card-title>{{offer.title}}</mat-card-title>
     <mat-card-subtitle>{{offer.subTitle}}</mat-card-subtitle>
