@@ -1,7 +1,12 @@
-.container {
+.body-container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-top: 100px;
 
-  h2 {
-    font-size: 1.5rem;
-    text-align: center;
+  & h2 {
+    font-size: 3rem;
   }
+}
+.category-block {
+  margin-bottom: 60px;
 }

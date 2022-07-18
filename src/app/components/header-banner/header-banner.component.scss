@@ -1,0 +1,14 @@
+.banner-container {
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 26%;
+  position: relative;
+
+  & img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}

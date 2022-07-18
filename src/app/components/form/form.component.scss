@@ -1,0 +1,26 @@
+.form {
+  &-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  & form {
+    flex-grow: 1;
+  }
+  &-title {
+    margin-right: 3rem;
+  }
+  &-item {
+    width: calc(50% - 0.5rem);
+
+    & button {
+      float: right;
+    }
+  }
+}
+.example-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

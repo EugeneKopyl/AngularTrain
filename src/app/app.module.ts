@@ -1,8 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+
+// material imports
 import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSelectModule } from '@angular/material/select';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { OfferService } from './services/offer.service';
 import { AboutPageComponent } from './components/about-page/about-page.component';
+import { HeaderBannerComponent } from './components/header-banner/header-banner.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +34,7 @@ import { AboutPageComponent } from './components/about-page/about-page.component
     FooterComponent,
     BodyComponent,
     AboutPageComponent,
+    HeaderBannerComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,6 +44,10 @@ import { AboutPageComponent } from './components/about-page/about-page.component
     MatCardModule,
     HttpClientModule,
     AppRoutingModule,
+    MatInputModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatSelectModule,
   ],
   providers: [OfferService],
   bootstrap: [AppComponent],
