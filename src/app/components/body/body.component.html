@@ -2,10 +2,10 @@
 <div class="body-container">
   <div class="category-block">
     <h2>Легковые автомобили</h2>
-    <app-card></app-card>
+    <app-card *ngFor="let offer of offers" [offer]="offer"></app-card>
   </div>
   <div class="category-block">
     <h2>Недвижимость</h2>
-    <app-card></app-card>
+    <app-card *ngFor="let offer of offers" [offer]="offer"></app-card>
   </div>
 </div>

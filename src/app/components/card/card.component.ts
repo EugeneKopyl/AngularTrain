@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { OfferService } from '../../services/offer.service';
 import { Router } from '@angular/router';
+import { Offer } from '../../app.component';
 
 @Component({
   selector: 'app-card',
@@ -8,41 +9,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent {
-  constructor(private service: OfferService, private router: Router) {}
+  @Input() offer: Offer = {};
 
-  offers: any = [
-    {
-      id: 1,
-      title: 'Каталог новых авто в лизинг',
-      subTitle: 'Сенсационная программа финансирования',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deserunt dicta in nemo non provident quas quia quis. Deserunt magnam rem voluptatem? Architecto illum inventore ipsam iure iusto, maiores molestias nostrum odit praesentium quae quas saepe sed similique suscipit tempora unde velit voluptas voluptatem. Laborum modi mollitia voluptas? Alias architecto commodi debitis deserunt dicta dignissimos ducimus, eaque hic iste praesentium quisquam voluptate voluptatem.',
-      createdDate: '2022-06-23T17:30:26.000Z',
-    },
-    {
-      id: 2,
-      title: 'Партнерская программа финансирования',
-      subTitle: 'Сенсационная программа финансирования',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deserunt dicta in nemo non provident quas quia quis. Deserunt magnam rem voluptatem? Architecto illum inventore ipsam iure iusto, maiores molestias nostrum odit praesentium quae quas saepe sed similique suscipit tempora unde velit voluptas voluptatem. Laborum modi mollitia voluptas? Alias architecto commodi debitis deserunt dicta dignissimos ducimus, eaque hic iste praesentium quisquam voluptate voluptatem.',
-      createdDate: '2022-06-23T17:30:26.000Z',
-    },
-    {
-      id: 3,
-      title: 'Официальный партнер Lexus в Беларуси',
-      subTitle: null,
-      description: null,
-      createdDate: '2022-07-11T11:23:22.123Z',
-    },
-    {
-      id: 4,
-      title: 'OfferTitle',
-      subTitle: null,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deserunt dicta in nemo non provident quas quia quis. Deserunt magnam rem voluptatem? Architecto illum inventore ipsam iure iusto, maiores molestias nostrum odit praesentium quae quas saepe sed similique suscipit tempora unde velit voluptas voluptatem. Laborum modi mollitia voluptas? Alias architecto commodi debitis deserunt dicta dignissimos ducimus, eaque hic iste praesentium quisquam voluptate voluptatem.',
-      createdDate: '2022-07-12T09:00:00.000Z',
-    },
-  ];
+  constructor(private service: OfferService, private router: Router) {}
 
   ngOnInit(): void {
     // this.service.getAllData().subscribe((res) => {

@@ -3,10 +3,10 @@
     <h3>Оставьте заявку на лизинг</h3>
     <p>и получите предварительный расчет</p>
   </div>
-  <form class="example-form">
+  <form class="example-form" #f="ngForm" (ngSubmit)="onSubmit(f)">
     <mat-form-field appearance="fill" class="form-item">
       <mat-label>Предмет лизинга</mat-label>
-      <mat-select>
+      <mat-select ngModel name="type">
         <mat-option [value]="1">1</mat-option>
         <mat-option [value]="2">2</mat-option>
         <mat-option [value]="3">3</mat-option>
@@ -14,17 +14,19 @@
     </mat-form-field>
     <mat-form-field class="example-full-width form-item" appearance="fill">
       <mat-label>Имя</mat-label>
-      <input matInput />
+      <input matInput type="text" name="name" ngModel />
     </mat-form-field>
     <mat-form-field class="example-full-width form-item" appearance="fill">
       <mat-label>Мобильный телефон</mat-label>
-      <input matInput />
+      <input matInput type="tel" name="tel" ngModel />
     </mat-form-field>
     <mat-form-field class="example-full-width form-item" appearance="fill">
       <mat-label>Электронная почта</mat-label>
-      <input matInput />
+      <input matInput type="email" name="email" ngModel />
     </mat-form-field>
-    <mat-checkbox class="example-margin form-item">Check me!</mat-checkbox>
+    <mat-checkbox class="example-margin form-item" ngModel name="checked"
+      >Я соглашаюсь с условиями предоставления услуги</mat-checkbox
+    >
     <div class="form-item">
       <button mat-stroked-button color="primary">Отправить заявку!</button>
     </div>
