@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
@@ -7,13 +7,15 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./form.component.scss'],
 })
 export class FormComponent {
-  type = '';
-  name = '';
-  tel = '';
-  email = '';
-  checked = false;
+  contactForm = new FormGroup({
+    type: new FormControl(''),
+    name: new FormControl(''),
+    tel: new FormControl(''),
+    email: new FormControl(''),
+    checked: new FormControl(false),
+  });
 
-  onSubmit(form: NgForm) {
-    console.log(form.value);
+  onSubmit() {
+    console.log(this.contactForm.value);
   }
 }

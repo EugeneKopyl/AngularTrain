@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // material imports
 import { MatSliderModule } from '@angular/material/slider';
@@ -39,6 +39,7 @@ import { HeaderBannerComponent } from './components/header-banner/header-banner.
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     MatSliderModule,
     MatCardModule,
