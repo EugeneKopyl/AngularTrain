@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Offer } from '../../app.component';
 
 @Component({
@@ -6,7 +6,7 @@ import { Offer } from '../../app.component';
   templateUrl: './body.component.html',
   styleUrls: ['./body.component.scss'],
 })
-export class BodyComponent implements OnInit {
+export class BodyComponent {
   constructor() {}
 
   offers: Offer[] = [
@@ -42,6 +42,4 @@ export class BodyComponent implements OnInit {
       createdDate: new Date('2022-07-12T09:00:00.000Z'),
     },
   ];
-
-  ngOnInit(): void {}
 }

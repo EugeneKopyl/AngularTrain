@@ -16,6 +16,6 @@ export class FormComponent {
   });
 
   onSubmit() {
-    console.log(this.contactForm.value);
+    this.contactForm.reset();
   }
 }
