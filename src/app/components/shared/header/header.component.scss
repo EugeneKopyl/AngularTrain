@@ -1,0 +1,14 @@
+.container {
+  max-width: none;
+  background-color: white;
+  color: black;
+
+  &.main-header {
+    width: 100%;
+    height: 70px;
+  }
+}
+.logo-container {
+  width: 142px;
+  height: 32px;
+}

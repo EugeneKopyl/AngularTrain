@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { OfferService } from '../../services/offer.service';
+import { OfferService } from '../../../services/offer.service';
 
 @Component({
   selector: 'app-card-detail',
-  templateUrl: './card-detail.component.html',
-  styleUrls: ['./card-detail.component.scss'],
+  templateUrl: './offer-detail.component.html',
+  styleUrls: ['./offer-detail.component.scss'],
 })
-export class CardDetailComponent implements OnInit {
+export class OfferDetailComponent implements OnInit {
   constructor(private service: OfferService, private route: ActivatedRoute) {}
 
   offer: any;

@@ -12,28 +12,28 @@ import { MatSelectModule } from '@angular/material/select';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CardComponent } from './components/card/card.component';
-import { FormComponent } from './components/form/form.component';
-import { CardDetailComponent } from './components/card-detail/card-detail.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { BodyComponent } from './components/body/body.component';
+import { OfferCardComponent } from './components/shared/offer-card/offer-card.component';
+import { FormComponent } from './components/shared/form/form.component';
+import { OfferDetailComponent } from './components/pages/offer-detail/offer-detail.component';
+import { HeaderComponent } from './components/shared/header/header.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { PersonalComponent } from './components/pages/personal/personal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { OfferService } from './services/offer.service';
-import { AboutPageComponent } from './components/about-page/about-page.component';
-import { HeaderBannerComponent } from './components/header-banner/header-banner.component';
+import { AboutComponent } from './components/pages/about/about.component';
+import { HeaderBannerComponent } from './components/shared/header-banner/header-banner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent,
+    OfferCardComponent,
     FormComponent,
-    CardDetailComponent,
+    OfferDetailComponent,
     HeaderComponent,
     FooterComponent,
-    BodyComponent,
-    AboutPageComponent,
+    PersonalComponent,
+    AboutComponent,
     HeaderBannerComponent,
   ],
   imports: [

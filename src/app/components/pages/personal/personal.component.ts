@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { Offer } from '../../app.component';
+import { Offer } from '../../../interfaces/interfaces';
 
 @Component({
   selector: 'app-body',
-  templateUrl: './body.component.html',
-  styleUrls: ['./body.component.scss'],
+  templateUrl: './personal.component.html',
+  styleUrls: ['./personal.component.scss'],
 })
-export class BodyComponent {
+export class PersonalComponent {
   constructor() {}
 
   offers: Offer[] = [

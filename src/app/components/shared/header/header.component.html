@@ -1,0 +1,14 @@
+<div
+  class="container main-header d-flex align-items-center justify-content-between"
+>
+  <div class="logo-container">
+    <img src="../../../../assets/logo.jpg" alt="logo" />
+  </div>
+  <ul class="nav">
+    <li class="nav-item" *ngFor="let navItem of navItems">
+      <a class="nav-link ms-3" routerLink="{{ navItem.link }}">
+        {{ navItem.name }}
+      </a>
+    </li>
+  </ul>
+</div>
