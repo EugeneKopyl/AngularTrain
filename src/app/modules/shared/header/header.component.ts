@@ -9,7 +9,7 @@ import { NavLinks } from '../../../interfaces/interfaces';
 export class HeaderComponent {
   navItems: NavLinks[] = [
     {
-      link: '/home',
+      link: '/offers',
       name: 'частному клиенту',
     },
     {
@@ -17,11 +17,11 @@ export class HeaderComponent {
       name: 'бизнесу',
     },
     {
-      link: '/home',
+      link: '',
       name: 'документы',
     },
     {
-      link: '/home',
+      link: '',
       name: 'спецпредложения',
     },
     {

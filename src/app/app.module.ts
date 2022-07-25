@@ -12,29 +12,24 @@ import { MatSelectModule } from '@angular/material/select';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OfferCardComponent } from './components/shared/offer-card/offer-card.component';
-import { FormComponent } from './components/shared/form/form.component';
-import { OfferDetailComponent } from './components/pages/offer-detail/offer-detail.component';
-import { HeaderComponent } from './components/shared/header/header.component';
-import { FooterComponent } from './components/shared/footer/footer.component';
-import { PersonalComponent } from './components/pages/personal/personal.component';
+import { FormComponent } from './modules/shared/form/form.component';
+import { HeaderComponent } from './modules/shared/header/header.component';
+import { FooterComponent } from './modules/shared/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { OfferService } from './services/offer.service';
-import { AboutComponent } from './components/pages/about/about.component';
-import { HeaderBannerComponent } from './components/shared/header-banner/header-banner.component';
+import { AboutModule } from './modules/pages/about/about.module';
+import { OfferDetailModule } from './modules/pages/offer-detail/offer-detail.module';
+import { PersonalModule } from './modules/pages/personal/personal.module';
+import { HomeComponent } from './modules/pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OfferCardComponent,
+    HomeComponent,
     FormComponent,
-    OfferDetailComponent,
     HeaderComponent,
     FooterComponent,
-    PersonalComponent,
-    AboutComponent,
-    HeaderBannerComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,6 +44,9 @@ import { HeaderBannerComponent } from './components/shared/header-banner/header-
     MatButtonModule,
     MatCheckboxModule,
     MatSelectModule,
+    AboutModule,
+    OfferDetailModule,
+    PersonalModule,
   ],
   providers: [OfferService],
   bootstrap: [AppComponent],
