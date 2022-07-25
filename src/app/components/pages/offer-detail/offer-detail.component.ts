@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
-import { OfferService } from '../../../services/offer.service';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Offer } from '../../../interfaces/interfaces';
 
 @Component({
   selector: 'app-card-detail',
@@ -8,15 +8,13 @@ import { OfferService } from '../../../services/offer.service';
   styleUrls: ['./offer-detail.component.scss'],
 })
 export class OfferDetailComponent implements OnInit {
-  constructor(private service: OfferService, private route: ActivatedRoute) {}
+  offer!: Offer;
 
-  offer: any;
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.route.params.subscribe((params: Params) => {
-      this.service.getById(params['id']).subscribe((res) => {
-        this.offer = res;
-      });
+    this.route.data.subscribe((data) => {
+      this.offer = data['offer'];
     });
   }
 }

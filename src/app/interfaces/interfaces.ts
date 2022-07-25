@@ -4,9 +4,8 @@ export interface NavLinks {
 }
 
 export interface Offer {
-  id?: number;
-  title?: string;
-  subTitle?: string;
-  description?: string;
-  createdDate?: Date;
+  id: number;
+  title: string;
+  subTitle: string;
+  description: string;
 }
