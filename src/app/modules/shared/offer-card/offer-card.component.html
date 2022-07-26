@@ -1,10 +1,14 @@
-<div class="card-container">
-  <div class="card-image-container">
+<div class="card-container py-4 d-flex align-items-center flex-wrap p-3">
+  <div class="card-image-container col-11 col-sm-4 me-0 me-sm-4">
     <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" />
   </div>
-  <div class="card-title">
-    <h3>{{ offer.title }}</h3>
-    <p>{{ offer.subTitle }}</p>
+  <div class="flex-grow-1 col-11 col-sm-6">
+    <h3 class="fs-2 fw-bold">{{ offer.title }}</h3>
+    <p class="fs-4">{{ offer.subTitle }}</p>
+    <a
+      routerLink="{{ '/offers/' + offer.id }}"
+      class="fs-6 fs-md-4 align-self-end float-end"
+      >Узнать больше ---></a
+    >
   </div>
-  <a routerLink="{{ '/offers/' + offer.id }}">Узнать больше ---></a>
 </div>

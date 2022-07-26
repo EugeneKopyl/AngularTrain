@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./personal.component.scss'],
 })
 export class PersonalComponent {
-  constructor(private service: OfferService, private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute) {}
 
   offers: Offer[] = [];
 

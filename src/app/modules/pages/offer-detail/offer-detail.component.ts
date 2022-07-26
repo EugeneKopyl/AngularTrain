@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Offer } from '../../../interfaces/interfaces';
 
 @Component({
-  selector: 'app-card-detail',
+  selector: 'app-offer-detail',
   templateUrl: './offer-detail.component.html',
   styleUrls: ['./offer-detail.component.scss'],
 })
