@@ -1,6 +1,6 @@
 {
   "/apiUrl/*": {
-    "target": "http://localhost:8083/test/offers/",
+    "target": "http://localhost:8083/offers/",
     "secure": false,
     "changeOrigin": true,
     "logLevel": "debug",
