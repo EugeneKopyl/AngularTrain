@@ -72,7 +72,8 @@
               "browserTarget": "AngularTrain:build:production"
             },
             "development": {
-              "browserTarget": "AngularTrain:build:development"
+              "browserTarget": "AngularTrain:build:development",
+              "proxyConfig": "./proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

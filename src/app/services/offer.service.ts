@@ -9,12 +9,12 @@ import { Offer } from '../interfaces/interfaces';
 export class OfferService {
   constructor(private http: HttpClient) {}
 
-  getOffersUrl = 'http://localhost:8083/test/offers/';
+  getOffersUrl = '/apiUrl';
 
-  getAllData(): Observable<any> {
-    return this.http.get(`${this.getOffersUrl}`);
+  getAllData(): Observable<Offer> {
+    return this.http.get<Offer>(`${this.getOffersUrl}`);
   }
-  getById(id: string): Observable<any> {
-    return this.http.get(`${this.getOffersUrl}/${id}`);
+  getById(id: string): Observable<Offer> {
+    return this.http.get<Offer>(`${this.getOffersUrl}/${id}`);
   }
 }
