@@ -33,4 +33,9 @@ export class HeaderComponent {
       name: 'контакты',
     },
   ];
+  isMenuOpen = false;
+
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 }

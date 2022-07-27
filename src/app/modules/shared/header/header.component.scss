@@ -12,3 +12,33 @@
   width: 142px;
   height: 32px;
 }
+.burger {
+  display: none;
+  cursor: pointer;
+  @media screen and (max-width: 991px) {
+    display: block;
+    z-index: 1000;
+  }
+}
+.nav {
+  @media screen and (max-width: 991px) {
+    display: none;
+    &.is-open {
+      display: block;
+      position: absolute;
+      z-index: 999;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+
+      .nav-item {
+        background-color: white;
+        border-bottom: 1px solid #cccccc;
+        height: 70px;
+      }
+    }
+  }
+}
