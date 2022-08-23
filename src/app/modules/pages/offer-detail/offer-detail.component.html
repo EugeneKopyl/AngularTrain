@@ -1,8 +1,11 @@
-<div class="container">
-  <button routerLink="/"><- back</button>
+<div *ngIf="offer else loading" class="container">
+  <button routerLink="/offers"><- back</button>
   <h2>
     <span>{{ offer.id }}.</span> {{ offer.title }}
   </h2>
   <p>{{ offer.subTitle }}</p>
   <p>{{ offer.description }}</p>
 </div>
+<ng-template #loading>
+  <div>Loading...</div>
+</ng-template>

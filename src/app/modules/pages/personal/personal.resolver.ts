@@ -12,10 +12,10 @@ import { Injectable } from '@angular/core';
 export class PersonalResolver implements Resolve<Offer> {
   constructor(private offerService: OfferService) {}
 
-  resolve(
+  public resolve(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
-  ): Observable<Offer> | Promise<Offer> | Offer {
+  ): Offer {
     return this.offerService.getAllData();
   }
 }

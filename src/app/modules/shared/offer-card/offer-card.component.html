@@ -1,4 +1,4 @@
-<div class="card-container py-4 d-flex align-items-center flex-wrap p-3">
+<div *ngIf="offer else loading" class="card-container py-4 d-flex align-items-center flex-wrap p-3">
   <div class="card-image-container col-11 col-sm-4 me-0 me-sm-4">
     <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" />
   </div>
@@ -12,3 +12,6 @@
     >
   </div>
 </div>
+<ng-template #loading>
+  <div>Loading...</div>
+</ng-template>

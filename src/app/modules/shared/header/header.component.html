@@ -12,7 +12,7 @@
       class="nav-item d-flex align-items-center"
       *ngFor="let navItem of navItems"
     >
-      <a class="nav-link" routerLink="{{ navItem.link }}">
+      <a class="nav-link" [routerLink]="navItem.link">
         {{ navItem.name }}
       </a>
     </li>

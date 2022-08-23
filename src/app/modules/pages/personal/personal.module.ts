@@ -6,7 +6,7 @@ import { PersonalResolver } from './personal.resolver';
 
 const routes: Routes = [
   {
-    path: 'offers',
+    path: '',
     component: PersonalComponent,
     resolve: {
       offers: PersonalResolver,

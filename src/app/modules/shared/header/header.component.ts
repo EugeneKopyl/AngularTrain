@@ -7,7 +7,7 @@ import { NavLinks } from '../../../interfaces/interfaces';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  navItems: NavLinks[] = [
+  public navItems: NavLinks[] = [
     {
       link: '/offers',
       name: 'частному клиенту',

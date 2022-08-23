@@ -48,7 +48,6 @@ import { HomeComponent } from './modules/pages/home/home.component';
     OfferDetailModule,
     PersonalModule,
   ],
-  providers: [OfferService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

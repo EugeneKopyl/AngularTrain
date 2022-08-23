@@ -7,7 +7,7 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./form.component.scss'],
 })
 export class FormComponent {
-  contactForm = new FormGroup({
+  public contactForm = new FormGroup({
     type: new FormControl(''),
     name: new FormControl(''),
     tel: new FormControl(''),
@@ -15,7 +15,7 @@ export class FormComponent {
     checked: new FormControl(false),
   });
 
-  onSubmit() {
+  public onSubmit() {
     this.contactForm.reset();
   }
 }

@@ -7,5 +7,5 @@ import { Offer } from '../../../interfaces/interfaces';
   styleUrls: ['./offer-card.component.scss'],
 })
 export class OfferCardComponent {
-  @Input() offer!: Offer;
+  @Input() public offer: Offer = null;
 }

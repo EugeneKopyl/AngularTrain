@@ -1,10 +1,5 @@
-import {
-  ActivatedRouteSnapshot,
-  Resolve,
-  RouterStateSnapshot,
-} from '@angular/router';
+import { ActivatedRouteSnapshot, Resolve } from '@angular/router';
 import { Offer } from '../../../interfaces/interfaces';
-import { Observable } from 'rxjs';
 import { OfferService } from '../../../services/offer.service';
 import { Injectable } from '@angular/core';
 
@@ -12,10 +7,7 @@ import { Injectable } from '@angular/core';
 export class OfferDetailResolver implements Resolve<Offer> {
   constructor(private offerService: OfferService) {}
 
-  resolve(
-    route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot
-  ): Observable<Offer> | Promise<Offer> | Offer {
+  resolve(route: ActivatedRouteSnapshot): Offer {
     return this.offerService.getById(route.params['id']);
   }
 }

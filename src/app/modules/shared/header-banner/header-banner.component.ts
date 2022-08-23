@@ -5,11 +5,5 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './header-banner.component.html',
   styleUrls: ['./header-banner.component.scss']
 })
-export class HeaderBannerComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class HeaderBannerComponent {
 }
